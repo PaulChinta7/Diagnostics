@@ -1,6 +1,9 @@
+import ProductCard from "../components/ProductCard";
 const HomePage = () => {
-    return ( <>
-    Entire page
+    return ( <><div className="bg">
+
+     Home page
+    </div>
     </> );
 }
  
