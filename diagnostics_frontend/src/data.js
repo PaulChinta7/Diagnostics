@@ -1,6 +1,6 @@
 export const data=[
     {
-        "name": "COID-19 PCR Test",
+        "name": "COVID-19 PCR Test",
         "no": "COVIDPCR001",
         "description": "Polymerase Chain Reaction (PCR) test to detect COVID-19 virus RNA.",
         "summary": "COVID-19 PCR Test",

@@ -1,6 +1,9 @@
 const Orders = () => {
     return ( <>
-    This is orders page</> );
+    <div className="bg">
+     <p>This is Orders page</p>
+    </div>
+    </> );
 }
  
 export default Orders;

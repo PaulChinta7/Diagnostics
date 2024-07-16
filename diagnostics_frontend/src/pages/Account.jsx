@@ -1,6 +1,8 @@
 const Account = () => {
     return ( <>
-    This is account page</>  );
+    <div className="bg">
+     <p>This is Account page</p>
+    </div></>  );
 }
  
 export default Account;

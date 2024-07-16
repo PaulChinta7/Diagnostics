@@ -1,6 +1,8 @@
 const ErrorPage = () => {
     return ( <>
-    404 file not found
+    <div className="bg">
+     <p>This is 404 page</p>
+    </div>
     </> );
 }
  

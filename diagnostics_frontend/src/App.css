@@ -1,64 +1,93 @@
+/* fonts */
+@import url('non.geist');
+
+body {
+  font-family: 'Geist Variable';
+}
+
+
 .App{
   display: flex;
-
+  flex-direction: column;
+  align-items: center;
 }
 /* nav bar css starts */
 .logo{
   display: flex;
 }
-.logo .logolink{
+.logolink{
   text-decoration: none;
   color: white;
+  font-size: 13px;
 }
 .logo img{
   width: 30px;
   height: 30px;
 }
 nav {
-  background-color: #083344;
-  width: 100px;
-  height: 100vh;
+  background-color: white;
   margin: 0px 0px 0px 0px;
-  padding:  10px 20px 10px 40px;
-  /* position: fixed; */
+  padding:  10px 0px 10px 0px;
+  width: 100%;
+ 
 }
 nav ul {
   display: flex;
-  flex-direction: column;
   justify-content: center;
-  justify-content: space-evenly;
-  margin: 0px;
-  padding: 0px;
+  justify-content: baseline;
+  margin: 5px 0px;
+  padding: 5px 0px;
+  background-color: #84cc16;
+  
 }
 nav ul li{
   list-style-type: none;
+  padding: 0px 20px;
 }
 nav ul li .navlink{
   text-decoration: none;
-  color: white;
-  font-size: 12px;
+  color: black;
+  font-size: 11px;
 }
 
 /* nav bar css ends */
 .bg{
-  background-color: #ececec;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
   width: 100%;
+  height: 80vh;
 }
 
 /* products page css start */
 .productsContainer{
+
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin: 10px;
+ 
 }
 .searchPaginationContainer{
-  margin: 20px 5px;
-  width: 700px;
+  margin: 10px 10px;
+  width: 500px;
   display: flex;
   justify-content: space-between;
 }
+
+.searchtext{
+  font-size:12px;
+  /* font-weight: 500; */
+}
+.searchbar{
+
+}
+
 .productsList{
   margin: 0px 10px 0px 10px;
+  border: 1px solid black;
+  border-radius: 10px;
 }
 
 .PaginationContainer{
@@ -69,15 +98,12 @@ nav ul li .navlink{
 /* product card css starts*/
 
 .productcard{
- 
   background-color: white;
   margin: 4px 0px;
-  width: 700px;
+  width: 500px;
   height:100px;
   font-size: 10px;
   display: flex;
-  border: 1px solid black;
- 
   
 }
 
@@ -106,6 +132,37 @@ nav ul li .navlink{
 }
 
 
+/* homepage */
+
+.homelayout{
+  display: flex;
+  justify-content: space-evenly;
+}
+.quote{
+  display: flex;
+  flex-direction: column;
+}
+.lineone{
+  display: flex;
+  font-size: 100px;
+  font-weight: bold;
+  height: 80px;
+}
+.lineone2{
+  font-size: 50px;
+  font-weight: 500;
+  
+}
+.linetwo{
+  font-size: 100px;
+  font-weight: 400;
+  height: 100px;
+}
+.linethree{
+  font-size: 13px;
+  font-weight: 300;
+  padding: 0px 5px;
+}
 @media (prefers-reduced-motion: no-preference) {
   
 }

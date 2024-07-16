@@ -1,6 +1,9 @@
 const Cart = () => {
     return ( <>
-    This is cart page</> );
+    <div className="bg">
+     <p>This is Cart page</p>
+    </div>
+    </> );
 }
  
 export default Cart;
