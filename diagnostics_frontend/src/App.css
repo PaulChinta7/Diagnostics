@@ -20,6 +20,7 @@ nav {
   height: 100vh;
   margin: 0px 0px 0px 0px;
   padding:  10px 20px 10px 40px;
+  /* position: fixed; */
 }
 nav ul {
   display: flex;
@@ -50,7 +51,7 @@ nav ul li .navlink{
   margin: 10px;
   background-color: white;
   border-radius: 10px;
-  width: 500px;
+  width: 700px;
   height:100px;
   font-size: 10px;
   display: flex;
@@ -73,6 +74,14 @@ nav ul li .navlink{
   width: 50px;
   height: 18px;
 }
+/* prodcuts card ends */
+
+
+.productsTitle{
+  margin: 5px;
+  padding: 0px 10px;
+}
+
 
 @media (prefers-reduced-motion: no-preference) {
   

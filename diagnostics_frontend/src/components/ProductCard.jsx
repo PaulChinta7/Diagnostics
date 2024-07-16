@@ -1,5 +1,4 @@
 import { useState } from "react"
-import Button from "./Button";
 import { Link } from "react-router-dom";
 // name,
 // no,
@@ -11,15 +10,16 @@ import { Link } from "react-router-dom";
 // reportsin
 
 
-const ProductCard = () => {
-    const [Name,setName]=useState("Covid RTPCR");
-    const [Id,setId]=useState("X3EP0");
-    const [Description,setDescription]=useState("A CBC is a common blood test that evaluates the overall health and function of blood cells.");
-    const [Summary,setSummary]=useState("Provides information on red blood cells, white blood cells, and platelets.");
-    const [Type,setType]=useState("Blood test");
-    const [Price,setPrice]=useState("$50");
-    const [Location,setLocation]=useState("laboratory");
-    const [ReportsIn,setReportsIn]=useState("1-2 days");
+const ProductCard = (prop) => {
+
+    const [Name,setName]=useState(prop.obj.name);
+    const [Id,setId]=useState(prop.obj.no);
+    const [Description,setDescription]=useState(prop.obj.description);
+    const [Summary,setSummary]=useState(prop.obj.summary);
+    const [Type,setType]=useState(prop.obj.type);
+    const [Price,setPrice]=useState(prop.obj.price);
+    const [Location,setLocation]=useState(prop.obj.location);
+    const [ReportsIn,setReportsIn]=useState(prop.obj.reportsin);
 
     return ( <>
     <div className="productcard">
@@ -35,11 +35,11 @@ const ProductCard = () => {
         <span>{Type}</span>
         <span>{Location}</span>
         <span>{ReportsIn}</span>
-        <span>{Price}</span>
+        <span>${Price}</span>
         </div>
         <div className="productcard-line"> 
         <Link to="/products">more...</Link>
-        <Button name={"Add"} />
+        <button className="button"> Add</button>
         </div>
 
 
