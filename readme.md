@@ -1,3 +1,5 @@
+![homepage](https://github.com/user-attachments/assets/81467788-fbd6-471c-922a-91717134bb15)
+
 "Welcome to diagnostics application" 
 
 How to run:
