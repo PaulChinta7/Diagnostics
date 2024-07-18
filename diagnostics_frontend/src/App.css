@@ -58,6 +58,8 @@ nav ul li .navlink{
   background-color: white;
   width: 100%;
   height: 80vh;
+  margin: 10px 0px;
+  padding: 10px 0px;
 }
 
 
@@ -68,15 +70,7 @@ nav ul li .navlink{
 }
 
 
-.productlist{
-  display: flex;
-  flex-direction: column;
-  width: 30%;
-  height: 100%;
-  margin:0px 10px;
-  padding: 0px 10px 8px 10px;
-  border: 1px solid #eeeeee;
-}
+
 
 .productdescription{
   width: 50%;
@@ -85,6 +79,54 @@ nav ul li .navlink{
   margin: 0px 30px;
 }
 
+.productlist{
+  display: flex;
+  flex-direction: column;
+  justify-content:start;
+  width: 100%;
+  height: 100%;
+
+}
+.productlist2{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 30%;
+  height: 95%;
+  margin:0px 10px;
+  padding:10px 10px 8px 10px;
+  border: 1px solid #eeeeee;
+}
+.searchbar{
+  font-size: 10px;
+  padding: 0px 10px;
+}
+.searchfield{
+  width: 150px;
+  height: 12px;
+  border: 1px solid #bbbbbb;
+  outline: none;
+  padding: 2px 2px;
+  font-size: 10px;
+  border-radius: 2px;
+}
+.pagination{
+  display: flex;
+  justify-content: space-between;
+  padding: 7px 10px;
+}
+.pagebutton{
+  margin: 0px;
+  padding: 0px;
+  width: 35px;
+  height: 18px;
+  border-radius: 5px;
+  border: 0px;
+  font-size: 9px;
+  background-color: #84cc16;
+  font-weight: bold;
+  color: white;
+}
 
 /* product card css starts*/
 .productcard{
@@ -137,7 +179,7 @@ nav ul li .navlink{
 
 
 
-/* homepage */
+/* homepage */          
 
 .homelayout{
   display: flex;
