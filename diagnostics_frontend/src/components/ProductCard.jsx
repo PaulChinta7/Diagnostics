@@ -1,6 +1,9 @@
-import {Link} from 'react-router-dom'
+import { useDispatch } from "react-redux";
 const ProductCard = (props) => {
     const data=props;
+    const dispatch=useDispatch();
+    const HandleMore=()=>{dispatch({type:"SET_DESCRIPTION",payload:data.product})};
+    const HandleAddToCart=()=>{dispatch({type:"ADD_TO_CART",payload:data.product})}
     return ( <>
     
     <div className="productcard"> 
@@ -9,13 +12,14 @@ const ProductCard = (props) => {
         <p>{data.product.no}</p>
         </div>
         <div className="productcardtwo">
-        <p>{data.product.description}</p><span><Link>more..</Link></span>    
+        <p>{data.product.description}</p>
+        <span onClick={HandleMore}>More...</span>    
         </div>
         <div className="productcardthree">
         <p>{data.product.type}</p>
         <p>{data.product.location}</p>
         <p>${data.product.price}</p>
-        <button className="addbutton">Add</button>
+        <button className="addbutton" onClick={HandleAddToCart}>Add</button>
         </div>
 
         </div>
