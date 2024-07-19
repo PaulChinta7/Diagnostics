@@ -1,7 +1,6 @@
 import {Link} from 'react-router-dom'
 const ProductCard = (props) => {
     const data=props;
-    console.log(data.product.name);
     return ( <>
     
     <div className="productcard"> 
