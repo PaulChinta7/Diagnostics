@@ -19,6 +19,11 @@ const reducer = (state = initialState, action) => {
           ...state,
           cart: [...state.cart,action.payload]
         };
+        case 'DELETE_FROM_CART':
+        return {
+          ...state,
+          cart: state.cart.filter((obj)=>obj.name!==action.payload.name)
+        };
     default:
       return state;
   }

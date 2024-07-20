@@ -270,6 +270,118 @@ nav ul li .navlink{
 }
 /* prodcuts card ends */
 
+/* cart page css starts */
+
+.cartlistcontainer{
+  width: 70%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+.cartlist{
+  width: 80%;
+  height: 70%;
+  margin: 10px;
+  border: 1px solid #eeeeee;  
+  border-radius: 5px;
+}
+.cartlistheading{
+  font-size: 10px;
+  width: 100%;
+  height: 20%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  color: white;
+  background-color: #84cc16;
+}
+.cartlistback{
+  display: flex;
+  justify-content: end;
+  padding: 0px 30px;
+  
+}
+.cartlisttitles{
+  font-weight: 600;
+  font-size: 12px;
+  display: flex;
+  justify-content: space-between;
+  padding: 0px 30px;
+}
+.cartlistitems{
+  width: 100%;
+  height: 80%;
+}
+
+.cartlistitem{
+  
+  height: 10%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 10px;
+  padding: 5px 30px;
+  border-bottom:1px solid #eeeeee;
+}
+.cartitemid{
+  width: 5%;
+}
+.cartitemname{
+  width: 25%;
+}
+.cartitemfield{
+width: 10%;
+}
+.cartitemdropdown{
+  width: 40px;
+  height: 18px;
+  outline: none;
+}
+.cartitemquant{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width:15%;
+}
+.incbutton{
+  border: 1px solid black;
+  border-radius:10px;
+  width: 20px;
+  height: 20px;
+}
+.decbutton{
+  border: 1px solid black;
+  border-radius:10px;
+  width: 20px;
+  height: 20px;
+
+}
+
+.cartitemdeletebutton{
+  font-size: 10px;
+  border: none;
+  background-color: white;
+  text-decoration: underline;
+  color: black;
+}
+.checkoutcontainer{
+  width:30%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.checkout{
+  width: 70%;
+  height: 70%;
+  margin: 10px;
+}
+
+
+
+
 
 
 
