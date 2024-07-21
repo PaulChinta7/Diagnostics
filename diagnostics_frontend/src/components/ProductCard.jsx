@@ -3,7 +3,11 @@ const ProductCard = (props) => {
     const data=props;
     const dispatch=useDispatch();
     const HandleMore=()=>{dispatch({type:"SET_DESCRIPTION",payload:data.product})};
-    const HandleAddToCart=()=>{dispatch({type:"ADD_TO_CART",payload:data.product})}
+    const HandleAddToCart=()=>{dispatch({type:"ADD_TO_CART",payload:
+        {name:data.product.name,no:data.product.no,quantity:1,price:data.product.price}
+    })
+    HandleMore();
+}
     return ( <>
     
     <div className="productcard"> 

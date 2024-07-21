@@ -30,6 +30,16 @@ const reducer = (state = initialState, action) => {
             ...state,
             subtotal: state.subtotal+action.payload
           };
+          case 'INC_PRODUCT_QUANTITY':
+          return {
+            ...state,
+            cart: state.cart.map((item)=>item.name===action.payload.name? {...item,quantity:item.quantity+1}:{...item})
+          };
+          case 'DEC_PRODUCT_QUANTITY':
+            return {
+              ...state,
+              cart: state.cart.map((item)=>item.name===action.payload.name? {...item,quantity:item.quantity-1}:{...item})
+            };
     default:
       return state;
   }
