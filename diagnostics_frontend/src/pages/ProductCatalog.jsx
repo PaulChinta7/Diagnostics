@@ -12,7 +12,7 @@ const ProductCatalog = () => {
     const HandlePrev=()=>{if(page>1)setpage(page-1)};
     const HandleNext=()=>{if(page<obj.length/6)setpage(page+1)};
     const HandleSearch=(e)=>{setpage(1);setsearchTerm(e.target.value)};
-    // console.log(cart);
+    
     return ( <>
     <div className="bg">
         <div className="productlist2">

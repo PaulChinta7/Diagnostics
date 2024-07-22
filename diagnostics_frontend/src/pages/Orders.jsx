@@ -1,7 +1,13 @@
+import Order from "../components/Order";
 const Orders = () => {
     return ( <>
     <div className="bg">
-     <p>This is Orders page</p>
+    <div className="orderscontianer">
+        <Order/>
+        <Order/>
+        <Order/> 
+        
+    </div> 
     </div>
     </> );
 }

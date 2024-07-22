@@ -57,7 +57,7 @@ nav ul li .navlink{
   align-items: center;
   background-color: white;
   width: 100%;
-  height: 80vh;
+ height: 80vh;
   margin: 10px 0px;
   padding: 10px 0px;
 }
@@ -430,8 +430,119 @@ width: 10%;
 }
 
 
+/* orders css starts */
 
+.orderscontianer{
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  
+}
+.singleorder{
+  margin: 10px 0px;
+}
+.ordersheading{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+ 
+  height: 17%;
+  width: 100%;
+  border: 1px solid #eeeeee;
+  border-radius: 5px;
+  
+}
+.ordersdate{
+  font-size: 8px;
+  padding: 3px 10px;
+  border-bottom: 1px solid #eeeeee;
+  background-color: #f7f7f7;
+  color: black;
 
+}
+.ordersdetails{
+
+  font-size: 8px;
+  gap: 20px;
+  padding: 3px 10px;
+  display: flex;
+  justify-content: first baseline;
+}
+.ordersdeatilsheading{
+  background-color: #84cc16;
+  color: white;
+  font-weight: 500;
+  font-size: 10px;
+  padding: 3px 10px;
+  display: flex;
+  justify-content: space-around;
+}
+.orders{
+  width: 100%;
+
+  display: flex;
+  flex-direction: column;
+  border: 1px solid #eeeeee;
+}
+.order{
+  font-size: 10px;
+  padding: 5px 5px;
+  display: flex;
+  justify-content: space-around;
+}
+
+/* account css start here */
+.accountcontainer{
+display: flex;
+width: 80%;
+height: 100%;
+}
+.subnav{
+  display: flex;
+  width: 30%;
+
+  
+}
+.accountdetails{
+  display: flex;
+  flex-direction: column;
+  width: 70%;
+
+}
+.personaldetails{
+  display: flex;
+  flex-direction: column;
+}
+.personaldetailsname{
+  padding: 10px 10px;
+  display: flex;
+  justify-content:space-between;
+}
+.personaldetailsage{
+  padding: 10px 10px;
+  display: flex;
+  justify-content: space-between;
+ 
+}
+.personaldetailsage2{
+  padding: 10px 10px;
+  display: flex;
+  justify-content: space-between;
+}
+.personaldetailsaddress{
+  padding: 10px 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+.userdetails{
+  display: flex;
+  flex-direction: column;
+}
+.billingdetails{
+  display: flex;
+  flex-direction: column;
+}
 /* homepage */          
 
 .homelayout{

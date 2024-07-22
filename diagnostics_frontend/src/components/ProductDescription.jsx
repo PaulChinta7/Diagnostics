@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useDispatch } from "react-redux";
 
 const ProductDescription = (props) => {
     const name=props.product.name;
@@ -7,7 +7,12 @@ const ProductDescription = (props) => {
     const location=props.product.location;
     const reportsin=props.product.reportsin;
     const price=props.product.price;
-    // console.log(name);
+
+    const dispatch=useDispatch();
+    const HandleAddToCart=()=>{dispatch({type:"ADD_TO_CART",payload:
+        {name:props.product.name,no:props.product.no,quantity:1,price:props.product.price}
+    })}
+    
     return ( <>
     <div className="prodtitle">
                 <span className="prodtitle1">{name}</span>
@@ -31,7 +36,7 @@ const ProductDescription = (props) => {
                     <span>Price<br /><span className="data">${price}</span></span>
                 </div>
                 <div className="proddetails2">
-                    <button className="addbutton2">Add to Cart</button>
+                    <button className="addbutton2" onClick={HandleAddToCart}>Add to Cart</button>
                 </div>
 
             </div>

@@ -5,7 +5,7 @@ import { createStore } from 'redux';
 const initialState = {
   product:{},
   cart:[],
-  subtotal:0
+  page:1
 };
 
 const reducer = (state = initialState, action) => {
@@ -25,11 +25,6 @@ const reducer = (state = initialState, action) => {
           ...state,
           cart: state.cart.filter((obj)=>obj.name!==action.payload.name)
         };
-        case 'UPDATE_SUBTOTAL':
-          return {
-            ...state,
-            subtotal: state.subtotal+action.payload
-          };
           case 'INC_PRODUCT_QUANTITY':
           return {
             ...state,
@@ -39,6 +34,12 @@ const reducer = (state = initialState, action) => {
             return {
               ...state,
               cart: state.cart.map((item)=>item.name===action.payload.name? {...item,quantity:item.quantity-1}:{...item})
+            };
+          case "UPDATE_PAGE":
+            return{
+              ...state,
+              page:action.payload
+
             };
     default:
       return state;
