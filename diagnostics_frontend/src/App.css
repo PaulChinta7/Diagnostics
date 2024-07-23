@@ -61,7 +61,16 @@ nav ul li .navlink{
   margin: 10px 0px;
   padding: 10px 0px;
 }
+.bg2{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  width: 100%;
 
+  margin: 10px 0px;
+  padding: 10px 0px;
+}
 
 .PaginationContainer{
   display: flex;
@@ -485,7 +494,7 @@ width: 10%;
   border: 1px solid #eeeeee;
 }
 .order{
-  font-size: 10px;
+  font-size: 8px;
   padding: 5px 5px;
   display: flex;
   justify-content: space-around;
