@@ -22,9 +22,18 @@ public class ProductService {
 	public ResponseEntity<List<Product>> getProducts() {
 		return new ResponseEntity<List<Product>>(productdao.findAll(),HttpStatus.OK) ;
 	}
-	public ResponseEntity<String> addProduct(Product obj) {
-		productdao.save(obj);
-		return new ResponseEntity<String>("success",HttpStatus.OK);
+//	Handle OrderNotFound Exception
+//	getProductById?
+	public ResponseEntity<String> addProduct(Product product) {
+		if(!productdao.existsByCode(product.getNo())) {
+			productdao.save(product);
+			return new ResponseEntity<String>("success",HttpStatus.OK);
+		}
+		else {
+			return new ResponseEntity<String>("No id found",HttpStatus.CONFLICT);
+		}
+		
+		
 	}
 	public ResponseEntity<String> deleteProduct(int id) {
 			if(productdao.existsById(id)) {
@@ -34,8 +43,6 @@ public class ProductService {
 			else {
 				return new ResponseEntity<String>("No id found",HttpStatus.NOT_FOUND);
 			}
-		
-		
 	}
 	
 	public ResponseEntity<Void> updateProduct(int id,Product product) {
