@@ -15,3 +15,5 @@ command >> npm start
 Backend
 go to the diagnostics_backend folder
 command >> run java/src/example/demo/JAVASPRINGBOOTAPPLICATION.java
+
+DOCKER SETUP will be done after finishing MVP.
